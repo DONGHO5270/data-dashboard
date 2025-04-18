@@ -1,0 +1,66 @@
+{
+  "name": "data-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "React와 TypeScript를 활용한 데이터 분석 대시보드",
+  "author": "DONGHO5270",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DONGHO5270/data-dashboard.git"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.33.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "recharts": "^2.7.3",
+    "typescript": "^5.1.6",
+    "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.5.4",
+    "@types/node": "^20.5.7",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "autoprefixer": "^10.4.15",
+    "eslint": "^8.48.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.6.4",
+    "postcss": "^8.4.28",
+    "prettier": "^3.0.3",
+    "vite": "^4.4.9"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "jest",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:report": "playwright show-report",
+    "test:e2e:debug": "playwright test --debug",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
